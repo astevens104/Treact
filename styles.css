@@ -13,6 +13,19 @@ nav {
 
 }
 
+.purple {
+    color: #7342d6;
+}
+
+button {
+    background-color: #7342d6;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 20px;
+    border: none;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -20,7 +33,7 @@ nav {
     padding: 0 24px;
 }
 
-.row {
+.nav__row {
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -38,6 +51,7 @@ nav {
 .company-name {
     font-size: 20px;
     padding-left: 16px;
+    font-weight: bold;
 }
 
 ul {
@@ -69,11 +83,47 @@ li {
     transition: 300ms;
 }
 
-button {
-    background-color: #7342d6;
-    color: white;
-    padding: 12px 32px;
-    border-radius: 24px;
-    font-size: 20px;
-    border: none;
+
+
+/* HEADER */
+
+.landing__container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1200 px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+
+.landing__description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: left;
+    padding: 0 24px;
+}
+
+.landing__para {
+    margin: 8px 0;
+}
+
+.get-started {
+    margin: 8px 0;
+}
+
+.logostrip {
+    width: 480px;
+    max-width: 40%;
+    align-items: left;
+}
+
+.landing__img--wrapper {
+}   
+
+.landing__img {
+    width: 60%;
+    padding: 0 24px;
+}
+
+
