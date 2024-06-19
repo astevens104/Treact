@@ -10,7 +10,34 @@
 nav {
     height: 80px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+a{
+    color: #252525;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+h1 {
+    color: #252525;
+}
+
+p {
+    color: rgb(124 139 161);
+    font-size: 8;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 12px;
 }
 
 .purple {
@@ -30,11 +57,10 @@ button {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    
 }
 
-.nav__row {
-    align-items: center;
+.row {
     justify-content: space-between;
     display: flex;
 }
@@ -54,54 +80,36 @@ button {
     font-weight: bold;
 }
 
-ul {
-    display: flex;
-}
-
-li {
-    list-style-type: none;
-    padding-top: 12px;
-}
-
-.nav__link {
-    padding: 0 4px;
-    font-size: 20px;
-    color: #252525;
-    text-decoration: none;
-    font-weight: bold;
+.nav__links {
+    justify-content: space-between;
 }
 
 .nav__link--login {
     padding-left: 16px;
 }
 
-.nav__link:hover,
+/* .nav__link:hover,
 .logo__container:hover {
     color: #7342d6;
     text-decoration: underline;
     cursor: pointer;
     transition: 300ms;
+} */
+
+#landing {
+    padding: 0 24px;
 }
-
-
 
 /* HEADER */
 
-.landing__container {
-    width: 100%;
-    height: 100vh;
-    max-width: 1200 px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .landing__description {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    align-items: left;
-    padding: 0 24px;
+    width: 480px;
+    max-width: 40%;
+    padding: 24px; 
 }
 
 .landing__para {
@@ -113,17 +121,46 @@ li {
 }
 
 .logostrip {
-    width: 480px;
-    max-width: 40%;
+    width: 320px;
     align-items: left;
 }
 
 .landing__img--wrapper {
-}   
+    width: 720px;
+}
 
 .landing__img {
-    width: 60%;
+    padding: 0 24px;
+    max-width: 100%;
+}
+
+/* FEATURES */
+
+#features {
     padding: 0 24px;
 }
 
+.features__container {
+    padding: 80px 0;
+}
 
+.features__row {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 0 auto;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+}
