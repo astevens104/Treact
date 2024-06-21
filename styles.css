@@ -7,6 +7,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+section{
+    padding: 48px;
+}
+
 nav {
     height: 80px;
     display: flex;
@@ -25,13 +29,18 @@ a{
 h1 {
     color: #252525;
     padding: 8px 0;
-    font-size: 48px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 56px;
     font-weight: bold;
 }
 
 p {
-    color: rgb(124 139 161);
-    font-size: 8;
+    color: rgb(113 128 150);
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -54,6 +63,10 @@ li {
 
 .tan {
     color: #a67b5b;
+}
+
+.white {
+    color: white;
 }
 
 button {
@@ -79,6 +92,10 @@ button {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.title {
+    color:#7342d6;
 }
 
 .logo__container {
@@ -112,9 +129,6 @@ button {
     transition: 300ms;
 } */
 
-#landing {
-    padding: 0 24px;
-}
 
 /* HEADER */
 
@@ -156,10 +170,6 @@ FEATURES
 
 */
 
-#features {
-    padding: 0 24px;
-}
-
 .features__container {
     padding: 80px 0;
 }
@@ -171,10 +181,6 @@ FEATURES
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-}
-
-.features__title{
-    font-size: 16px;
 }
 
 .features__row {
@@ -220,10 +226,6 @@ QUALITY WORK SECTION
 
 */
 
-#quality {
-    padding: 48px;
-}
-
 
 .quality__container {
     display: flex;
@@ -254,10 +256,6 @@ QUALITY WORK SECTION
 STEPS 
 
 */
-
-#steps {
-    padding: 48px 0;
-}
 
 .steps__wrapper {
     display: flex;
@@ -315,10 +313,6 @@ VALUES
 
 */
 
-#values {
-    padding: 48px;
-}
-
 .values__container {
     max-width: 480px;
 }
@@ -348,4 +342,116 @@ VALUES
 
 .values__img {
     max-width: 720px;
+}
+
+/* 
+
+PRICING 
+
+*/
+
+.pricing__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.pricing__description  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.pricing__para {
+    max-width: 480px;
+    margin-bottom: 48px;
+}
+
+.pricing__plans {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.individual__gradient {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.enterprise__gradient {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.pricing__plan {
+    width: calc(100% / 3);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+.plan__cost {
+    padding: 16px 0;
+}
+
+.target__demographic {
+    padding: 12px 0;
+    color: #252525;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan__features {
+    display: flex;
+    flex-direction: column;
+    color: rgb(113 128 150);
+    font-size: 16px;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.business__features {
+    color: white;
+}
+
+.business__plan {
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: white;
+    border-end-end-radius: 4px;
+}
+
+.button__wrapper {
+    padding: 24px 0;
+}
+
+.personal__buy-now {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.business__buy-now {
+    background-color: white;
+    color: #7342d6;
+
+}
+
+.enterprise__buy-now {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
